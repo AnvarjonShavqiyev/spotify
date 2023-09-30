@@ -132,7 +132,7 @@ function renderPlaylists(playlists){
     playlists.slice(0, 6).forEach(playlistGridItem => {
         console.log(playlistGridItem)
         const playListGridItemLinkElement = document.createElement("a");
-        playListGridItemLinkElement.href = location.origin + `./pages/playlist.html?playlistId=${playlistGridItem.id}`
+        playListGridItemLinkElement.href = location.origin + `pages/playlist.html?playlistId=${playlistGridItem.id}`
         const playListGridItemElement = document.createElement("div");
         playListGridItemElement.className = "bg-[#d7d7d76c]  backdrop-blur-[3px] rounded-[15px] flex items-center p-[10px] gap-[20px]";
         playListGridItemElement.innerHTML = `
